@@ -1,17 +1,22 @@
 <!-- Toolbar -->
+<!DOCTYPE="HTML">
 <div class="toolbar" role="banner">
-  
-  <span>Welcome</span>
+    <div></div>
+    <div class="spacer"></div>
+    <div class="name">
+        <h1>Daniel Molder</h1>
+        <h2>Software Engineer/Data Analyst</h2>
+    </div>
     <div class="spacer"></div>
     <div class="logo">
         <a aria-label="LinkedIn" target="_blank" href="https://www.linkedin.com/in/daniel-molder-025154175/">
-            <img src = "../assets/In-White-21.png" height="50px" title="LinkedIn"
+            <img src = "../assets/In-White-48.png"  title="LinkedIn"
             alt="Link to my LinkedIn profile.">
         </a>
     </div>
     <div class="logo">
         <a aria-label="Github" target="_blank" href="https://github.com/dmolder/">
-            <img src = "../assets/github-mark-white.png" height="50px" title="Github"
+            <img src = "../assets/github-mark-white.png" height="48px" title="Github"
             alt="Link to my personal github user profile.">
         </a>
     </div>
@@ -20,14 +25,23 @@
 
 <div class="content" role="main">
     <nav>
-        <ul>
-          <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
-          <li><a routerLink="/experience" routerLinkActive="active" ariaCurrentWhenActive="page">Experience</a></li>
-        </ul>
+        <div class = 'menu'>
+            <ul>
+                <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page"><strong>About</strong></a></li>
+                <li><a routerLink="/experience" routerLinkActive="active" ariaCurrentWhenActive="page"><strong>Experience</strong></a></li>
+                <li><a routerLink="/education" routerLinkActive="active" ariaCurrentWhenActive="page">
+                  <img src="../assets/education_logo.png">
+                  <strong>Education</strong>
+                </a></li>
+            </ul>
+        </div>
     </nav>
+    <div class="display">
+        <router-outlet></router-outlet>
+    </div>
   <footer>      
   </footer>
 
 </div>
 
-<router-outlet></router-outlet>
+
