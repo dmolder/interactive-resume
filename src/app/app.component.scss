@@ -4,8 +4,8 @@
     color: #333;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    min-height: 100%;
-    height: 100vh;
+    min-height: 80vh;
+    height: 80vh;
     display: block;
   }
 
@@ -31,7 +31,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 110px;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,7 +61,7 @@
     display: flex;
     width: 100%;
     height: 100%;
-    margin: 110px 0px 32px;
+    margin: 20vh 0px 32px;
     flex-direction: row;
   }
 
@@ -203,13 +203,18 @@
     li:hover{
         background-color: #bbb;
     }
-
+    li{
+        display: flex;
+        flex-grow: 1;
+    }
     //Apparently doesn't work on Firefox, can be done with JS potentially, fine for now.
     li:has(> a.active){ 
         background-color: #ddd;
     }
-    
+
     & ul{
+        display: flex;
+        flex-direction: column;
         font-size: 26px;
         text-align: center;
         list-style-type: none;
