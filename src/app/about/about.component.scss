@@ -6,10 +6,20 @@
     background-color: #b8c2cc;
 }
 
+img{
+    height: 100px !important;
+    width: 100px !important;
+}
+
+.header{
+    height: 50px;
+}
+
 .top{
     height: 30%;
     display: flex;
     & *{
+        justify-content: center;
         flex-grow: 1;
         text-align: center;
     }
@@ -17,5 +27,23 @@
 
 h2{
     margin-top: 4px;
+    margin-bottom: 0;
     text-decoration: underline;
+}
+
+.hobbies{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+}
+
+.gaming,.sports,.music{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
 }
